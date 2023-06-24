@@ -135,8 +135,11 @@ z-index: -2;
 }
 
 .card-img{
-    width: 96px;
+    width: 120px;
+    height: 110px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 .card-border{
     width: 110px;
@@ -327,6 +330,9 @@ z-index: -2;
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid var(--first-color);
   }
 
   .personal-title h1 {
