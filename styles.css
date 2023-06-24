@@ -127,6 +127,7 @@ z-index: -2;
 .card{
     position: relative;
     width: 330px;
+    height: 350px;
     background-color: var(--black-color);
     padding: 1.25rem 2rem 10rem;
     border-radius: 1.5rem;
