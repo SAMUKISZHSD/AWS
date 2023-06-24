@@ -2,9 +2,9 @@
 
 :root {
     --first-color: #fb8b24; 
-    --first-color-light: #fb8b24;
-    --black-color: #353535;
-    --text-color: #d9d9d9;
+    --first-color-light: #2074B7;
+    --black-color: #393B5A;
+    --text-color: #fff;
     --body-color: #ffffff; 
 
 
@@ -18,6 +18,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    width: 0;
     
 }
 
@@ -25,7 +26,8 @@ body{
     font-family: var(--body-font);
     background-color: var(--text-color);
     display: block;
-    
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -48,15 +50,16 @@ img{
 }
 
 .navbar {
-  
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-     gap: 20%;
+     gap: 3%;
      margin: 2%;
-     flex-direction: column;
-   
+  }
+
+  .navbar h3 {
+    font-size: 40px;
   }
   
   
@@ -74,15 +77,53 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+}
+
+.ladoEsquerdo {
+position: absolute;
+width: 388px;
+height: 120px;
+left: 0;
+z-index: -1;
+}
+
+.azul {
+    background: #1d90eec9;
+}
+
+.roxo {
+    background: #6a71ccc9;
+}
+
+.ladoDireito {
+position: absolute;
+width: 399px;
+height: 120px;
+right: 0;
+z-index: -2;
+}
+
+.cont1 {
+    top: 39%;
+}
+
+.cont2 {
+    top: 45%;
+}
+
+.cont3 {
+    top: 120%;
+}
+
+.cont4 {
+    top: 125%;
 }
 
 .c2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
    
 }
 .card{
@@ -127,7 +168,7 @@ img{
 }
 .btn button{
     position: absolute;
-    top: 80%;
+    top: 77%;
     left: 50%;
     padding: 5%;
     width: 15rem;
@@ -137,11 +178,14 @@ img{
     border-radius: 1.5rem;
     cursor: pointer;
     background-color: #ff7e05;
+    transition: all;
+    transition-duration: 300ms;
     
 }
 
 .btn:hover{
-    background-color:  #f09c4d;
+    background-color:  #faee40;
+    
     
 }
 
@@ -158,11 +202,11 @@ img{
     padding: 0.75rem;
     border-radius: 3rem;
     text-align: initial;
-    box-shadow: 0 8px 24px hsla(29, 75%, 56%, 0.3);
+    box-shadow: 0 3px 3px hsla(29, 75%, 56%, 0.3);
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -1.75rem;
+    bottom: 15px;
     margin: 0 auto;
     overflow: hidden;
     transform-origin: 18px 17px;
@@ -186,7 +230,7 @@ img{
 }
 .card-social-text{
     display: block;
-    color: var(--black-color);
+    color: #000;
     font-size: 100%;
     font-weight: 600;
 }
@@ -199,7 +243,6 @@ img{
 }
 .card-social-link{
     display: inline-flex;
-    background-color: var(--first-color-light);
     color: var(--black-color);
     font-size: 1.8rem;
     padding: 6px;
@@ -224,6 +267,67 @@ img{
 
 .card-social.animation{
     animation: up-animation 1s ease-in-out forwards;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-slide-in {
+    animation: slide-in 0.3s forwards; /* Adicione a animação de slide-in */
+  }
+  
+  .modal-slide-out {
+    animation: slide-out 0.3s forwards; /* Adicione a animação de slide-out */
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
 }
 
 @keyframes up-animation {
