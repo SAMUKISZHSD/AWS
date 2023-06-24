@@ -137,7 +137,7 @@ z-index: -2;
 .card-img{
     width: 120px;
     height: 110px;
-    border-radius: 50%;
+    border-radius: 100%;
     object-fit: cover;
     object-position: top;
 }
@@ -318,6 +318,7 @@ z-index: -2;
 
   .modal-direito {
     width: 47.5%;
+    overflow-y: scroll;
   }
 
   .personal-title {
