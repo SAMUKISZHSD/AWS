@@ -34,9 +34,7 @@ body{
 a{
     text-decoration: none;
 }
-ul{
-    list-style: none;
-}
+
 img{
     max-width: 100%;
     height: auto;
@@ -292,16 +290,56 @@ z-index: -2;
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+    margin: 1% auto;
+    padding-inline: 2.5%;
     border: 1px solid #888;
-    width: 80%;
+    width: 85%;
+    height: 96vh;
+
+    display: flex;
+    gap: 5%;
+  }
+
+  .modal-esquerdo {
+    width: 47.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-esquerdo img {
+    height: 95%;
+    margin-top: 2.5%;
+    object-fit: cover;
+  }
+
+  .modal-direito {
+    width: 47.5%;
+  }
+
+  .personal-title {
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  .personal-title img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+
+  .personal-title h1 {
+    font-size: 25px;
+    font-weight: 500;
   }
   
   .close {
     color: #aaa;
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    right: 6%;
+
+    font-size: 40px;
     font-weight: bold;
 }
 
