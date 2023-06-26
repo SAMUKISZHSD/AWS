@@ -31,6 +31,24 @@ body{
 }
 
 
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+
 a{
     text-decoration: none;
 }
@@ -77,45 +95,7 @@ img{
     align-items: center;
 }
 
-.ladoEsquerdo {
-position: absolute;
-width: 388px;
-height: 120px;
-left: 0;
-z-index: -1;
-}
 
-.azul {
-    background: #1d90eec9;
-}
-
-.roxo {
-    background: #6871e6c9;
-}
-
-.ladoDireito {
-position: absolute;
-width: 399px;
-height: 120px;
-right: 0;
-z-index: -2;
-}
-
-.cont1 {
-    top: 39%;
-}
-
-.cont2 {
-    top: 45%;
-}
-
-.cont3 {
-    top: 120%;
-}
-
-.cont4 {
-    top: 125%;
-}
 
 .c2{
     display: flex;
@@ -413,3 +393,71 @@ z-index: -2;
         transform: rotate(-1deg);
     }
 }
+
+
+
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#2F2E41; 
+    z-index:999; 
+  }
+  #preloader .inner {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);  
+  }
+  .bolas > div {
+  display: inline-block;
+  background-color: bisque;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+  }
+  .bolas > div:nth-child(1) {
+    animation-duration:1.0s ;
+    animation-delay: 0;
+  }
+  .bolas > div:nth-child(2) {
+    animation-duration: 1.0s ;
+    animation-delay: 0.12s;
+  }
+  .bolas > div:nth-child(3) {
+    animation-duration: 1.0s  ;
+    animation-delay: 0.24s;
+  }
+  
+  @keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+  }
+  
+   ::-webkit-scrollbar {
+      display: none;
+  }
