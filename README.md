@@ -7,3 +7,5 @@
 
 # Objetivo do trabalho
 Nosso objetivo principal com esse projeto é desenvolver um website que contenha os currículos de nossa equipe, além de implantar um ou mais serviços da AWS (Amazon Web Services) para garantir uma rede de entrega de conteúdo com baixa latência, segurança e armazenamento durável.
+
+** Tecnologias usadas **
