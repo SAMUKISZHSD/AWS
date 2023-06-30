@@ -1,7 +1,7 @@
 # Trabalho de conclusão de curso de AWS da escola da nuvem
 
 <p align="center">
-  <img src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' width="30%" gap="10px"/>
+  <img src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' width="30%" />
   <img src='https://media.licdn.com/dms/image/C560BAQFgzildvCflaA/company-logo_200_200/0/1611076778595?e=1696464000&v=beta&t=sz5W-bMRhI_Gp-z-C30D0Vi7iXjo9ytzKV5apwaceG8' width="30%"/>
 </p>
 
