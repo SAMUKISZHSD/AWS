@@ -20,6 +20,9 @@ Nosso objetivo principal com esse projeto é desenvolver um website que contenha
 
 # Arquitetura
 Quanto à arquitetura, optamos por uma abordagem simples. O usuário acessa nosso site pela internet, passa pelos domínios do AWS Cloud e é direcionado para nosso CloudFront, que, por sua vez, faz o roteamento direto para o nosso bucket do Amazon S3.
+<p align="center">
+  <img src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' width="50%" />
+</p>
   
 
 
