@@ -17,6 +17,9 @@ Nosso objetivo principal com esse projeto é desenvolver um website que contenha
 **Serviços AWS:**
 - Amazon S3
 -  Amazon CloudFront
+
+# Arquitetura
+Quanto à arquitetura, optamos por uma abordagem simples. O usuário acessa nosso site pela internet, passa pelos domínios do AWS Cloud e é direcionado para nosso CloudFront, que, por sua vez, faz o roteamento direto para o nosso bucket do Amazon S3.
   
 
 
