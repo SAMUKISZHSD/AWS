@@ -21,7 +21,7 @@ Nosso objetivo principal com esse projeto é desenvolver um website que contenha
 # Arquitetura
 Quanto à arquitetura, optamos por uma abordagem simples. O usuário acessa nosso site pela internet, passa pelos domínios do AWS Cloud e é direcionado para nosso CloudFront, que, por sua vez, faz o roteamento direto para o nosso bucket do Amazon S3.
 <p align="center">
-  <img src='https://github.com/SAMUKISZHSD/AWS-TCC/blob/main/Arquitetura.jpeg' width="50%" />
+  <img src='https://github.com/SAMUKISZHSD/AWS-TCC/blob/main/Arquitetura.jpeg' width="75%" />
 </p>
   
 
