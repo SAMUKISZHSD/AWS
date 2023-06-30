@@ -15,6 +15,8 @@ Nosso objetivo principal com esse projeto é desenvolver um website que contenha
 <img align="center" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" title="CSS">
 
 **Serviços AWS:**
+- Amazon S3
+-  Amazon CloudFront
   
 
 
