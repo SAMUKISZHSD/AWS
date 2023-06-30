@@ -1,4 +1,6 @@
 # Trabalho de conclusão de curso de AWS da escola da nuvem
+**SITE CURRICULO:** 
+https://d2p6dxry6y3u7t.cloudfront.net/index.html
 
 <p align="center">
   <img src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' width="30%" />
